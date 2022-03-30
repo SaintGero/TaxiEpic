@@ -18,7 +18,7 @@ body{
     top:0;
     position:fixed;
     display: flex;
-    z-index: 10;
+    z-index: 0;
 } 
 
 
@@ -29,6 +29,9 @@ margin-right: auto;
 
 }
 
+b {
+    font-size: 18px
+}
 
 #table-container {
     border-radius:20px;
@@ -38,7 +41,7 @@ margin-right: auto;
     font-family: sans-serif;
     text-align: center;
     opacity: .6;
-    bottom:40px;
+    bottom:5%;
     left: 4%;
     font-size: 13px;
     color: white;
@@ -46,15 +49,16 @@ margin-right: auto;
     z-index: 20;
 }
 
-#table-container2 {
+#HistoricsContainer {
     border-radius:20px;
-    width:20%;
-    height:20%;
+    padding: 1% 1% 1% 1%;
+    width: 25%;
+    height:30%;
     background-color: blue;
     font-family: sans-serif;
     text-align: center;
     opacity: .6;
-    bottom:250px;
+    bottom:7%;
     left: 4%;
     font-size: 13px;
     color: white;
@@ -62,3 +66,56 @@ margin-right: auto;
     z-index: 20;
 }
 
+.menu{
+    width: 2.2rem;
+    height: 2.7rem;
+    background: #2EE3AD;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0.5%;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    transition: left 0.7s;
+    z-index: 30;
+}
+
+.checkbox:checked ~ .menu{
+    left: 30%;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.left-panel {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(#54BBC7,#2EE3AD,#9191F2);
+    position: absolute;
+    top: 0;
+    left: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.7s;
+    z-index: 30;
+}
+
+.checkbox:checked ~ .left-panel{
+    left: 0;
+}
+.checkbox {
+    display: none;
+}
+
+ul a {
+    color: #F7F7F7;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
