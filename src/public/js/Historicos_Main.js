@@ -68,4 +68,4 @@ function ActualizarHistoricos(data){
     map.addLayer(PolyLine);
 }
 
-console.log('Prueba actualizacion 1.3')
+console.log('Prueba actualizacion 1.4')
